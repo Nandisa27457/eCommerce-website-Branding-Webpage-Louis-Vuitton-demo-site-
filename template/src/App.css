@@ -1,42 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  background-color: black;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*========
+Header CSS
+==========*/
+header{
+  display:flex;
+  flex-direction: row;
+  width:1439px;
+  height: 50px;
+  background-color:rgba(255, 255, 255, 0.775);
+  color:black;
+  position: relative;
+  bottom: 344px;
+  padding:20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Main-heading{
+  display:flex;
+  flex-direction: row;
+  color:black;
+  font-size:40px;
+  font-family: Playfair Display, serif;
+  position: relative;
+  bottom:20px;
 }
 
-.card {
-  padding: 2em;
+nav{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  left:300px;
+  gap:30px;
+  top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.read-the-docs {
-  color: #888;
+.header-link{
+  text-decoration: none;
+  color:black;
+  font-size:15px;
+}
+
+.header-link:hover{
+  text-decoration: underline;
+  color:grey;
+}
+
+.user-logo{
+  width:30px;
+  height:30px;
+  position: relative;
+  left:400px;
+}
+
+.user-logo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  color:grey;
 }
