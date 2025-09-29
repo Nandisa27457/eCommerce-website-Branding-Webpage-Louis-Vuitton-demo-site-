@@ -9,7 +9,7 @@ export default function Header() {
         <a className="header-link">Dedication</a>
         <a className="header-link">Products</a>
         <img className="user-logo" src="./src/assets/user.png" alt="user-logo"/>
-        <img classNanme="bag-logo" src="./src/assets/shopping-bag.png" alt="cart-logo"/>
+        <img className="bag-logo" src="./src/assets/shopping-bag.png" alt="cart-logo"/>
       </nav>
     </header>
   );
