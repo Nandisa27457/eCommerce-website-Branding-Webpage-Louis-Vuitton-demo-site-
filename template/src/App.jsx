@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Herosection from './components/Herosection'
 import './App.css'
 import Collections from './components/Collections'
@@ -11,11 +12,12 @@ function App() {
 
   return (
     <>
-    <Header/>
-    <Herosection/>
-    <Collections/>
-    <Dedication/>
-    <FashionGrid/>
+      <Header/>
+      <Herosection/>
+      <Collections/>
+      <Dedication/>
+      <FashionGrid/>
+      <Footer/>
     </>
   )
 }
