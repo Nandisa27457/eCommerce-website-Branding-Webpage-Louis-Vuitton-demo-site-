@@ -1,0 +1,112 @@
+.products-row {
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.product-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-images-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-image {
+  width: 400px;
+  height: 500px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  border: 2px solid #e5e5e5;
+  object-fit: cover;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail-image {
+  width: 160px;
+  height: 160px;
+}
+
+.detail-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #e5e5e5;
+  object-fit: cover;
+}
+
+.item-description-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  text-align: left;
+  color:black;
+}
+.fashion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.6s ease;
+  border: solid #e5e5e5;
+}
+
+
+/* Hover swap effect */
+.image-card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border: solid #e5e5e5;
+  object-fit: cover;
+}
+
+.image-card:hover .front {
+  opacity: 0;
+}
+
+.image-card:hover .back {
+  opacity: 1;
+}
+
+/* Smaller supporting images */
+.small {
+  grid-column: 2 / 3; /* right side */
+}

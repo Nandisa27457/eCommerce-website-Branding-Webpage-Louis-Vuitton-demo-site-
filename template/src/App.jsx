@@ -4,6 +4,7 @@ import Herosection from './components/Herosection'
 import './App.css'
 import Collections from './components/Collections'
 import Dedication from './components/Dedication'
+import FashionGrid from './components/Products'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
     <Herosection/>
     <Collections/>
     <Dedication/>
+    <FashionGrid/>
     </>
   )
 }
